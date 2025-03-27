@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
 :root {
+  /* Base theme colors */
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Primary Colors */
+  --primary-dark: #1e2a78;
+  --primary-light: #5d6de0;
+
+  /* Neutral Colors */
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-500: #6b7280;
+  --neutral-700: #374151;
+  --neutral-900: #111827;
+
+  /* Status/Accent Colors */
+  --success-green: #48bb78;
+  --warning-orange: #ed8936;
+  --error-red: #f56565;
+
+  /* Specific Dashboard Colors */
+  --blue-accent: #3182ce;
+  --light-blue: #87ceeb;
+
+  /* Brand Colors */
+  --color-brand: #1e2a78;
+  --color-brand-50: #f9fafb;
+  --color-brand-100: #e5e7eb;
+  --color-brand-500: #6b7280;
+  --color-brand-900: #111827;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-900: var(--neutral-900);
+  
+  --color-success: var(--success-green);
+  --color-warning: var(--warning-orange);
+  --color-error: var(--error-red);
+  
+  --color-blue-accent: var(--blue-accent);
+  --color-blue-light: var(--light-blue);
+  
+  --color-brand: var(--color-brand);
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-900: var(--color-brand-900);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply font-sans;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+
