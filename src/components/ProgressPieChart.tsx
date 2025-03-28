@@ -36,7 +36,7 @@ const ProgressPieChart: React.FC<ProgressPieChartProps> = ({
     { name: "Incorrect", value: totalQuestions - correctQuestions },
   ];
 
-  const COLORS = ["#1E90FF", "#E0E0E0"];
+  const COLORS = ["#3182ce", "#f3f4f6"];
 
   const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
     if (active && payload && payload.length) {
