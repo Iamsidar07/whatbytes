@@ -5,8 +5,7 @@ import {
   Line,
   XAxis,
   Tooltip,
-  ResponsiveContainer,
-  TooltipProps,
+  ResponsiveContainer
 } from "recharts";
 
 interface DataPoint {

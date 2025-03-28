@@ -1,9 +1,7 @@
 import ComparasionGraph from "@/components/ComparasionGraph";
 import QuestionAnalysis from "@/components/QuestionAnalysis";
 import SkillCard from "@/components/SkillCard";
-import Statistics from "@/components/QuickStatistics";
 import SyllabusAnalysis from "@/components/SyllabusAnalysis";
-import React from "react";
 import QuickStatistics from "@/components/QuickStatistics";
 
 export default function SkillTestPage() {
