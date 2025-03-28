@@ -26,7 +26,7 @@ A modern web application built with Next.js for frontend developer assessment, f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/whatbytes.git
+git clone https://github.com/iamsidar07/whatbytes.git
 cd whatbytes
 ```
 
