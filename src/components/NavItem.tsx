@@ -20,10 +20,10 @@ export default function NavItem({
         href={href}
         className={`
           flex items-center gap-3 p-2 rounded-lg
-          transition-colors duration-200
+          transition-colors duration-200 font-bold text-nowrap text-sm
           ${
             isActive
-              ? "bg-neutral-100 text-primary-dark "
+              ? "bg-neutral-100 text-blue-700 "
               : "text-neutral-700 hover:bg-neutral-100"
           }
         `}
